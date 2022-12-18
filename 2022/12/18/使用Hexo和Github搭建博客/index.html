@@ -4,11 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="测试文章图片显示, My Blog">
-    <meta name="description" content=" 今天顺利通过hexo d将网页文件推送至GitHub，网页正常显示，网页复制的图片正常显示，但是本地插入的图片未能加载成功。
-网上搜索解决方案，如下
-
-解决hexo中发布文章后图片无法显示的问题1. 问题描述默认情况下，在 hexo 中新">
+    <meta name="keywords" content="使用Hexo和Github搭建博客, My Blog">
+    <meta name="description" content="
+最近通过查找资料，建设了自己的博客，这期间历经了其实我感觉作为一个程序员来搞的话半天时间差不多就能搞定，最多一天时间。因为不懂，从零开始摸索，用了五天的时间，从使用GitHub Pages部署静态网页，到使用hexo在GitHub上部署主">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>测试文章图片显示 | My Blog</title>
+    <title>使用Hexo和Github搭建博客 | My Blog</title>
     <link rel="icon" type="image/png" href="/newblog2/favicon.png">
     
 
@@ -337,12 +335,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/newblog2/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/newblog2/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">测试文章图片显示</h1>
+                    <h1 class="description center-align post-title">使用Hexo和Github搭建博客</h1>
                 </div>
             </div>
         </div>
@@ -366,8 +364,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/newblog2/tags/%E5%9B%BE%E7%89%87/">
-                                <span class="chip bg-color">图片</span>
+                            <a href="/newblog2/tags/Hexo/">
+                                <span class="chip bg-color">Hexo</span>
                             </a>
                         
                     </div>
@@ -403,23 +401,75 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p> 今天顺利通过hexo d将网页文件推送至GitHub，网页正常显示，网页复制的图片正常显示，但是本地插入的图片未能加载成功。</p>
-<p>网上搜索解决方案，如下</p>
-<hr>
-<h1 id="解决hexo中发布文章后图片无法显示的问题"><a href="#解决hexo中发布文章后图片无法显示的问题" class="headerlink" title="解决hexo中发布文章后图片无法显示的问题"></a>解决hexo中发布文章后图片无法显示的问题</h1><h2 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1. 问题描述"></a>1. 问题描述</h2><p>默认情况下，在 hexo 中新建一篇<code>markdown博文</code>，在文章中插入本地图片，再部署到 github 上面，是无法显示这些图片的。</p>
-<h2 id="2-解决方法"><a href="#2-解决方法" class="headerlink" title="2. 解决方法"></a>2. 解决方法</h2><p>首先找到博客根目录下面的<code>_config.yml</code>文件，修改<code>post_asset_folder</code>的值为<code>true</code>.</p>
-<p>接着 git bash 切换到博客根目录下面，安装第三方插件<code>hexo-asset-image</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+                <blockquote>
+<p>最近通过查找资料，建设了自己的博客，这期间历经了其实我感觉作为一个程序员来搞的话半天时间差不多就能搞定，最多一天时间。因为不懂，从零开始摸索，用了五天的时间，从使用GitHub Pages部署静态网页，到使用hexo在GitHub上部署主题博客，虽然教程简单，但是中间踩了很懂坑，有的坑一坑就是半天过不，今天基本完成了，后续就是美化和进入折腾了，目前运行正常。通过这篇文章简单回忆一下。感谢网络上提供帮助的人，主要根据作者Andy的博客地址：<a target="_blank" rel="noopener" href="https://huahuipj.github.io/%E4%BD%9C%E4%B8%BA%E6%8C%87%E5%AF%BC%EF%BC%8C%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98Google%E8%A7%A3%E5%86%B3%E3%80%82%E8%BF%99%E7%AF%87%E6%96%87%E7%AB%A0%E4%B9%9F%E6%98%AF%E5%9C%A8%E5%8E%9F%E6%96%87%E5%9F%BA%E7%A1%80%E7%BB%93%E5%90%88%E8%87%AA%E5%B7%B1%E7%9A%84%E6%90%AD%E5%BB%BA%E6%80%BB%E7%BB%93%E7%9A%84%E3%80%82">https://huahuipj.github.io/作为指导，遇到问题Google解决。这篇文章也是在原文基础结合自己的搭建总结的。</a></p>
+</blockquote>
+<h2 id="Next-1："><a href="#Next-1：" class="headerlink" title="Next 1："></a>Next 1：</h2><p>给大家介绍搭建的博客，是需要部署在<code>Github</code>上的，首先要有一个<code>Github</code>账号的，没有的小伙伴去注册一个吧，操作比较简单这里就不在多讲了。</p>
+<h2 id="Next-2："><a href="#Next-2：" class="headerlink" title="Next 2："></a>Next 2：</h2><p>需要大家安装一下<code>Git</code>，相信作为一个程序员大家都已经安装过了，没有安装过的网上搜一下，教程很多也比较简单。</p>
+<p>（这里说明一下，因为单位和家里电脑都在进行搭建，单位电脑使用git最新版本2.39.0推送到GitHub失败，不明原因，后来网上搜索，换了git老版本解决问题。家里电脑使用git最新版本，正常使用。）</p>
+<h2 id="Next-3："><a href="#Next-3：" class="headerlink" title="Next 3："></a>Next 3：</h2><p> 安装<code>nodejs</code>和<code>Hexo</code>，其实这个步骤是成功部署博客的核心。</p>
+<ul>
+<li><p>首先我们要安装一下<code>nodejs</code>，<a target="_blank" rel="noopener" href="https://nodejs.org/en/">nodejs官网</a>, <a target="_blank" rel="noopener" href="https://blog.csdn.net/Small_Yogurt/article/details/104968169">具体安装步骤</a>。</p>
+</li>
+<li><p>安装完<code>nodejs</code>后，我们就要安装<code>Hexo</code>了，<code>Hexo</code>就是我们的个人博客网站的框架。</p>
+</li>
+<li><p>在安装之前，我们要先在<code>GitHub</code>上创建一个仓库，关于这个仓库，之前部署静态网站时已经建过，所以这里我新建了一个。第一次建仓库的话，建议就建，GitHub用户名.github.io，如下图所示。</p>
+<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_01.jpg" alt="创建仓库"></p>
+<p><strong>创建仓库</strong></p>
+<p>仓库的名称格式为<code>你的用户名.github.io</code>，点击<code>Create repository</code>按钮后创建成功。</p>
+<p>注意：如果你没有创建过<code>GitHub</code>的<code>token</code>的话，这里最好创建一个，因为现在使用<code>token</code>来代替<code>GitHub</code>的密码进行登录，你之前的密码将不能用于<code>GitHub</code>的登录，我这里就因为这个原因浪费了半天时间。因为提交代码的时候无法用密码进行登录，报错403，然后我以为是我账户或密码有问题，最后查到是因为<code>GitHub</code>更换了验证方式[捂脸]。<a target="_blank" rel="noopener" href="https://docs.github.com/cn/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token">如何创建个人访问令牌</a></p>
+<p>（这里说明一下，我没有创建token，只是建立了SHH key，连接Git和GitHub。这一步是实现用git将文件推送到GitHub上面，因为我实现了推送，所以没再建token。我分别在单位和家里的电脑上创建了不同的SHH key，创建步骤见帮助文档<a target="_blank" rel="noopener" href="https://docs.github.com/en/authentication%EF%BC%89">https://docs.github.com/en/authentication）</a></p>
+<p>第一步是安装Hexo，首先在磁盘建立一个文件夹 <code>Blog</code>，（我在D盘根目录下建立文件夹，文件夹名字自己定，这里以Blog为例），点开<code>Blog</code>文件夹，鼠标右键打开 <code>Git Bush Here</code>，输入<code>npm</code>命令安装<code>Hexo</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
 
 
-<p>接着<code>hexo new &quot;文章名&quot;</code> 新建一篇文章，会发现<code>source/_posts/</code>目录下面会生成一个和 markdown 文件同名的文件夹。再将当前这篇文章中需要插入的图片放到这个文件夹中，再到 markdown 中引用该文件夹中的图片，最后<code>hexo g</code> -&gt; <code>hexo d</code>，就可以正常的查看这些图片了。</p>
-<hr>
-<p>现在测试：新建了这篇文章，图片文件夹自动生成了。</p>
-<p>修改图片根目录–&gt;当插入本地图片时，复制到生成图片文件夹中</p>
-<p><img src="/newblog2/images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA/privateinvestocat.jpg" alt="privateinvestocat"></p>
-<p>上述方法无法解决图片显示的问题，还是用的昨天的方法，设置图片根目录，当插入本地图片时，复制到指定文件夹，然后插入图片，typora能显示，hexo s 正常显示，然后hexo g，最后hexo d。</p>
-<p>上传到GitHub后，打开网页图片不显示，延迟的问题，等一会就可以了，因为再实验第二篇文章的时候，第一篇文章的图片已经加载出来了。</p>
+<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_02.jpg" alt="安装Hexo"></p>
+<p><strong>安装Hexo</strong></p>
+<p>安装完成后，输入 <code>hexo init</code>命令初始化博客：</p>
+<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_03.jpg" alt="初始化Hexo"></p>
+<p><strong>初始化Hexo</strong></p>
+<p>然后输入 <code>hexo g</code> 静态部署：</p>
+<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_04.jpg" alt="部署Hexo"></p>
+<p><strong>部署Hexo</strong></p>
+<p>这时网页已经部署完成，输入 <code>hexo s</code> 命令可以查看：</p>
+<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_05.png" alt="img"></p>
+<p>浏览器输入 <code>http://localhost:4000</code> 就可以打开新部署的网页：</p>
+<p>（这里说明一下，因为我GitHub根目录已经有了仓库，我为该博客建的仓库是newblog2，这个名字要和_config.yml文件中url对应起来）</p>
+<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_06.jpg" alt="img"></p>
+<p>看完之后 <code>ctrl +c</code>停止运行服务器。</p>
+<h4 id="将Hexo部署到GitHub"><a href="#将Hexo部署到GitHub" class="headerlink" title="将Hexo部署到GitHub"></a>将<code>Hexo</code>部署到<code>GitHub</code></h4><p>（这里我卡了好久，一个是因为git和GitHub无法连接，就是SHH key的问题，一直无法推送成功，hexo d无法实现，单位电脑通过降低git版本，创建SHH key，成功hexo d将网页文件部署到GitHub）</p>
+<p>现在回到我们的 <code>Blog</code> 文件夹，用笔记本打开 <code>_config.yml</code> 文件，如下图：</p>
+<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_07.jpg" alt="img"></p>
+<p>下滑到文件底部，填上如下内容：（这一步很关键）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/huahuiPj/huahuiPj.github.io.git  #你的仓库地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>（摸索过程中，我用http也推送成功过，需要输入账号和密码，建立SHH key之后，就不能用http推送了，要选择SHH地址，这里我卡了好久，也是Google后解决的，repository那里填写SHH地址，这个需要到GitHub上查看，如下图选SHH查看地址）</p>
+<p><code>branch</code> 填你刚刚创建<code>GitHub</code>仓库的默认分支名称，看下是<code>master</code>还是<code>main</code>，不要填错了，<strong>还要注意一下，冒号后面加一个空格，空格很重要，一定注意</strong></p>
+<p>你的仓库地址就是下图这个：</p>
+<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_08.jpg" alt="仓库地址"></p>
+<p><strong>仓库地址</strong></p>
+<p>然后回到 <code>Blog</code> 文件夹中，打开<code>Git Bash</code>，安装<code>Git</code>部署插件，输入命令：</p>
+<p>（不要忘记安装这个插件，安装之后才能使用hexo d命令）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>然后分别输入以下三条命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean   #清除缓存文件 db.json 和已生成的静态文件 public</span><br><span class="line">hexo g       #生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)</span><br><span class="line">hexo d       #自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)</span><br></pre></td></tr></table></figure>
+
+<p>完成以后，打开浏览器，输入 <code>https://xxx.github.io</code>就可以打开你的网页了, 比如我的博客地址为<code>https://huahuipj.github.io</code>，如果你的博客没有显示或刷新可以等一小会儿再刷新一下，它可能会有延迟的问题。到这一步为止，你已经成功部署了属于你自己的一个简单博客了，不过样式看起来不怎么好看，接下来我们使用主题<code>hexo-theme-matery</code>来美化一下我们的博客。</p>
+<p>（根据你在GitHub上建立的仓位，在setting中通过pages查看网页地址，就可以查看网页了，网页同步GitHub数据会有一定的延迟，不要着急，大约3-5分钟即可加载出来，图片会更慢一些，我一开以为是图片加载错误，为了typora和hexo s本地部署后能显示图片，昨天搞到午夜零点，图片的问题我已经精疲力尽了，今早建了新的SHH key之后，顺利hexo d到GitHub，当查看网页看到图片加载不出来那一刻我几乎崩溃了，开始找解决办法，typora、hexo s、GitHub三者之间图片显示问题，折腾中无意间点了网页刷新，图片竟然加载出来了。我。。。）</p>
+</li>
+</ul>
+<h3 id="Next-4：（还没开始进行这一步）"><a href="#Next-4：（还没开始进行这一步）" class="headerlink" title="Next 4：（还没开始进行这一步）"></a>Next 4：（还没开始进行这一步）</h3><p>使用主题<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">hexo-theme-matery</a>来美化博客</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">点击这里到此主题中文配置的说明文档</a></p>
+<p>这个说明文档讲述的非常详细，包括主题的配置文件里面也都有中文注释和说明，完全不用我再多讲些什么，按照这个文档的顺序操作你就可以成功配置此主题了。</p>
+<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_09.jpg" alt="这是我配置好的Blog的首页"></p>
+<p><strong>这是Andy配置好的Blog的首页</strong></p>
+<p>感谢Andy的博客地址：<a target="_blank" rel="noopener" href="https://huahuipj.github.io/">https://huahuipj.github.io/</a></p>
+<p>到目前为止，可以发布新文章，插入图片，基本满足我目前的需求。更多的内容有时间再继续折腾，随时补充。</p>
+<p>没有基础的话，真的会有很多的坑，但是只要不放弃，总能找到解决问题的办法，解决问题的同时也有了更多的认识和了解。</p>
+<p>我基本是零基础开始，一步一步摸索下来，前后大约一周的时间，感觉收获挺多。接触了GitHub，git，GitHub Desktop，静态网站框架，GitHub Pages部署静态网页，HTML，CSS，Javascript，JS code，typora，hexo，hexo主题，阿里云盘等。因为时间有限，目前先摸索到这，有时间话慢慢折腾，下一步重点云服务器如何搭建博客。</p>
+<p>2022.12.18.14.13</p>
 
                 
             </div>
@@ -446,7 +496,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhw4616.github.io/newblog2/newblog2/2022/12/18/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA/">https://zhw4616.github.io/newblog2/newblog2/2022/12/18/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA/</a>
+                    <a href="https://zhw4616.github.io/newblog2/newblog2/2022/12/18/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">https://zhw4616.github.io/newblog2/newblog2/2022/12/18/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -484,8 +534,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/newblog2/tags/%E5%9B%BE%E7%89%87/">
-                                    <span class="chip bg-color">图片</span>
+                                <a href="/newblog2/tags/Hexo/">
+                                    <span class="chip bg-color">Hexo</span>
                                 </a>
                             
                         </div>
@@ -564,9 +614,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/newblog2/2022/12/18/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
                     <div class="card-image">
@@ -584,9 +635,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -595,6 +646,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -613,13 +665,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/newblog2/2022/12/17/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/">
+                <a href="/newblog2/2022/12/18/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA/">
                     <div class="card-image">
                         
                         
-                        <img src="/newblog2/medias/featureimages/11.jpg" class="responsive-img" alt="测试文章">
+                        <img src="/newblog2/medias/featureimages/16.jpg" class="responsive-img" alt="测试文章图片显示">
                         
-                        <span class="card-title">测试文章</span>
+                        <span class="card-title">测试文章图片显示</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -630,7 +682,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-18
                             </span>
                         <span class="publish-author">
                             
@@ -643,8 +695,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/newblog2/tags/%E7%A9%BA%E6%A0%BC/">
-                        <span class="chip bg-color">空格</span>
+                    <a href="/newblog2/tags/%E5%9B%BE%E7%89%87/">
+                        <span class="chip bg-color">图片</span>
                     </a>
                     
                 </div>
