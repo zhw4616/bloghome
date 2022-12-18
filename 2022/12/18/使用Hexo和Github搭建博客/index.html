@@ -414,7 +414,7 @@
 <li><p>安装完<code>nodejs</code>后，我们就要安装<code>Hexo</code>了，<code>Hexo</code>就是我们的个人博客网站的框架。</p>
 </li>
 <li><p>在安装之前，我们要先在<code>GitHub</code>上创建一个仓库，关于这个仓库，之前部署静态网站时已经建过，所以这里我新建了一个。第一次建仓库的话，建议就建，GitHub用户名.github.io，如下图所示。</p>
-<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_01.jpg" alt="创建仓库"></p>
+<p><img src="/newblog2/images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_01.jpg" alt="blog_01"></p>
 <p><strong>创建仓库</strong></p>
 <p>仓库的名称格式为<code>你的用户名.github.io</code>，点击<code>Create repository</code>按钮后创建成功。</p>
 <p>注意：如果你没有创建过<code>GitHub</code>的<code>token</code>的话，这里最好创建一个，因为现在使用<code>token</code>来代替<code>GitHub</code>的密码进行登录，你之前的密码将不能用于<code>GitHub</code>的登录，我这里就因为这个原因浪费了半天时间。因为提交代码的时候无法用密码进行登录，报错403，然后我以为是我账户或密码有问题，最后查到是因为<code>GitHub</code>更换了验证方式[捂脸]。<a target="_blank" rel="noopener" href="https://docs.github.com/cn/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token">如何创建个人访问令牌</a></p>
@@ -424,30 +424,30 @@
 
 
 
-<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_02.jpg" alt="安装Hexo"></p>
+<p><img src="/newblog2/images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_02.jpg" alt="blog_02"></p>
 <p><strong>安装Hexo</strong></p>
 <p>安装完成后，输入 <code>hexo init</code>命令初始化博客：</p>
-<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_03.jpg" alt="初始化Hexo"></p>
+<p><img src="/newblog2/images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_03.jpg" alt="blog_03"></p>
 <p><strong>初始化Hexo</strong></p>
 <p>然后输入 <code>hexo g</code> 静态部署：</p>
-<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_04.jpg" alt="部署Hexo"></p>
+<p><img src="/newblog2/images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_04.jpg" alt="blog_04"></p>
 <p><strong>部署Hexo</strong></p>
 <p>这时网页已经部署完成，输入 <code>hexo s</code> 命令可以查看：</p>
-<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_05.png" alt="img"></p>
+<p><img src="/newblog2/images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_05.png" alt="blog_05"></p>
 <p>浏览器输入 <code>http://localhost:4000</code> 就可以打开新部署的网页：</p>
 <p>（这里说明一下，因为我GitHub根目录已经有了仓库，我为该博客建的仓库是newblog2，这个名字要和_config.yml文件中url对应起来）</p>
-<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_06.jpg" alt="img"></p>
+<p><img src="/newblog2/images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_06.jpg" alt="blog_06"></p>
 <p>看完之后 <code>ctrl +c</code>停止运行服务器。</p>
 <h4 id="将Hexo部署到GitHub"><a href="#将Hexo部署到GitHub" class="headerlink" title="将Hexo部署到GitHub"></a>将<code>Hexo</code>部署到<code>GitHub</code></h4><p>（这里我卡了好久，一个是因为git和GitHub无法连接，就是SHH key的问题，一直无法推送成功，hexo d无法实现，单位电脑通过降低git版本，创建SHH key，成功hexo d将网页文件部署到GitHub）</p>
 <p>现在回到我们的 <code>Blog</code> 文件夹，用笔记本打开 <code>_config.yml</code> 文件，如下图：</p>
-<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_07.jpg" alt="img"></p>
+<p><img src="/newblog2/images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_07.jpg" alt="blog_07"></p>
 <p>下滑到文件底部，填上如下内容：（这一步很关键）</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/huahuiPj/huahuiPj.github.io.git  #你的仓库地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
 <p>（摸索过程中，我用http也推送成功过，需要输入账号和密码，建立SHH key之后，就不能用http推送了，要选择SHH地址，这里我卡了好久，也是Google后解决的，repository那里填写SHH地址，这个需要到GitHub上查看，如下图选SHH查看地址）</p>
 <p><code>branch</code> 填你刚刚创建<code>GitHub</code>仓库的默认分支名称，看下是<code>master</code>还是<code>main</code>，不要填错了，<strong>还要注意一下，冒号后面加一个空格，空格很重要，一定注意</strong></p>
 <p>你的仓库地址就是下图这个：</p>
-<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_08.jpg" alt="仓库地址"></p>
+<p><img src="/newblog2/images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_08.jpg" alt="blog_08"></p>
 <p><strong>仓库地址</strong></p>
 <p>然后回到 <code>Blog</code> 文件夹中，打开<code>Git Bash</code>，安装<code>Git</code>部署插件，输入命令：</p>
 <p>（不要忘记安装这个插件，安装之后才能使用hexo d命令）</p>
@@ -463,13 +463,14 @@
 <h3 id="Next-4：（还没开始进行这一步）"><a href="#Next-4：（还没开始进行这一步）" class="headerlink" title="Next 4：（还没开始进行这一步）"></a>Next 4：（还没开始进行这一步）</h3><p>使用主题<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">hexo-theme-matery</a>来美化博客</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">点击这里到此主题中文配置的说明文档</a></p>
 <p>这个说明文档讲述的非常详细，包括主题的配置文件里面也都有中文注释和说明，完全不用我再多讲些什么，按照这个文档的顺序操作你就可以成功配置此主题了。</p>
-<p><img src="/newblog2/../images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_09.jpg" alt="这是我配置好的Blog的首页"></p>
+<p><img src="/newblog2/images/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog_09.jpg" alt="blog_09"></p>
 <p><strong>这是Andy配置好的Blog的首页</strong></p>
 <p>感谢Andy的博客地址：<a target="_blank" rel="noopener" href="https://huahuipj.github.io/">https://huahuipj.github.io/</a></p>
 <p>到目前为止，可以发布新文章，插入图片，基本满足我目前的需求。更多的内容有时间再继续折腾，随时补充。</p>
 <p>没有基础的话，真的会有很多的坑，但是只要不放弃，总能找到解决问题的办法，解决问题的同时也有了更多的认识和了解。</p>
 <p>我基本是零基础开始，一步一步摸索下来，前后大约一周的时间，感觉收获挺多。接触了GitHub，git，GitHub Desktop，静态网站框架，GitHub Pages部署静态网页，HTML，CSS，Javascript，JS code，typora，hexo，hexo主题，阿里云盘等。因为时间有限，目前先摸索到这，有时间话慢慢折腾，下一步重点云服务器如何搭建博客。</p>
 <p>2022.12.18.14.13</p>
+<p>直接从网页复制的内容图片无法加载，手动重新插入，步骤还是昨天的方法，先设置图片根目录，再插入照片。</p>
 
                 
             </div>

@@ -406,20 +406,21 @@
                 <p> 今天顺利通过hexo d将网页文件推送至GitHub，网页正常显示，网页复制的图片正常显示，但是本地插入的图片未能加载成功。</p>
 <p>网上搜索解决方案，如下</p>
 <hr>
-<h1 id="解决hexo中发布文章后图片无法显示的问题"><a href="#解决hexo中发布文章后图片无法显示的问题" class="headerlink" title="解决hexo中发布文章后图片无法显示的问题"></a>解决hexo中发布文章后图片无法显示的问题</h1><h2 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1. 问题描述"></a>1. 问题描述</h2><p>默认情况下，在 hexo 中新建一篇<code>markdown博文</code>，在文章中插入本地图片，再部署到 github 上面，是无法显示这些图片的。</p>
-<h2 id="2-解决方法"><a href="#2-解决方法" class="headerlink" title="2. 解决方法"></a>2. 解决方法</h2><p>首先找到博客根目录下面的<code>_config.yml</code>文件，修改<code>post_asset_folder</code>的值为<code>true</code>.</p>
-<p>接着 git bash 切换到博客根目录下面，安装第三方插件<code>hexo-asset-image</code></p>
+<h1 id="解决hexo中发布文章后图片无法显示的问题"><a href="#解决hexo中发布文章后图片无法显示的问题" class="headerlink" title="解决hexo中发布文章后图片无法显示的问题"></a><del>解决hexo中发布文章后图片无法显示的问题</del></h1><h2 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1. 问题描述"></a><del>1. 问题描述</del></h2><p><del>默认情况下，在 hexo 中新建一篇<code>markdown博文</code>，在文章中插入本地图片，再部署到 github 上面，是无法显示这些图片的。</del></p>
+<h2 id="2-解决方法"><a href="#2-解决方法" class="headerlink" title="2. 解决方法"></a><del>2. 解决方法</del></h2><p><del>首先找到博客根目录下面的<code>_config.yml</code>文件，修改<code>post_asset_folder</code>的值为<code>true</code>.</del></p>
+<p><del>接着 git bash 切换到博客根目录下面，安装第三方插件<code>hexo-asset-image</code></del></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 
 
 
-<p>接着<code>hexo new &quot;文章名&quot;</code> 新建一篇文章，会发现<code>source/_posts/</code>目录下面会生成一个和 markdown 文件同名的文件夹。再将当前这篇文章中需要插入的图片放到这个文件夹中，再到 markdown 中引用该文件夹中的图片，最后<code>hexo g</code> -&gt; <code>hexo d</code>，就可以正常的查看这些图片了。</p>
+<p><del>接着<code>hexo new &quot;文章名&quot;</code> 新建一篇文章，会发现<code>source/_posts/</code>目录下面会生成一个和 markdown 文件同名的文件夹。再将当前这篇文章中需要插入的图片放到这个文件夹中，再到 markdown 中引用该文件夹中的图片，最后<code>hexo g</code> -&gt; <code>hexo d</code>，就可以正常的查看这些图片了。</del></p>
 <hr>
-<p>现在测试：新建了这篇文章，图片文件夹自动生成了。</p>
-<p>修改图片根目录–&gt;当插入本地图片时，复制到生成图片文件夹中</p>
+<p><del>现在测试：新建了这篇文章，图片文件夹自动生成了。</del></p>
+<p><del>修改图片根目录–&gt;当插入本地图片时，复制到生成图片文件夹中</del></p>
 <p><img src="/newblog2/images/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA/privateinvestocat.jpg" alt="privateinvestocat"></p>
-<p>上述方法无法解决图片显示的问题，还是用的昨天的方法，设置图片根目录，当插入本地图片时，复制到指定文件夹，然后插入图片，typora能显示，hexo s 正常显示，然后hexo g，最后hexo d。</p>
+<p>上述方法无法解决图片显示的问题，还是用的昨天的方法，设置图片根目录D:\New Blog\source，文件夹下建立images文件夹，设置当插入本地图片时，复制到该images文件夹（设置时，选复制到指定文件夹，输入..&#x2F;..&#x2F;source&#x2F;images&#x2F;${filename}，选择优先相对路径），然后插入图片，typora能显示，hexo s 正常显示，然后hexo g，最后hexo d。</p>
 <p>上传到GitHub后，打开网页图片不显示，延迟的问题，等一会就可以了，因为再实验第二篇文章的时候，第一篇文章的图片已经加载出来了。</p>
+<p>目前这样设置，可以解决图片三方显示的问题，但是之间具体的联系还是不太清楚，进一步摸索。</p>
 
                 
             </div>
