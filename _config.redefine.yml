@@ -10,7 +10,7 @@
 # BASIC INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 info:
   # Site title
-  title: BlogHome
+  title: BLOG HOME
   # Author name
   author: 不再孤独ing
   # Site URL
@@ -21,11 +21,11 @@ info:
 # IMAGE CONFIGURATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 defaults:
   # Favicon
-  favicon: /images/redefine-favicon.svg
+  favicon: /images/blogpicture/update.jpg
   # Site logo
-  logo: /images/redefine-logo.svg
+  logo: /images/blogpicture/update.jpg
   # Site avatar
-  avatar: /images/redefine-avatar.svg
+  avatar: /images/blogpicture/update.jpg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -105,10 +105,10 @@ home_banner:
     light: ../images/wallhaven-wqery6-light.webp # light mode 本地部署无法加载背景图片，然后这里加上两个..就可以了。
     dark: ../images/wallhaven-wqery6-dark.webp # dark mode 就是本地路径的问题，用相对路径就可以了。关于hostname就不纠结了。
   # Home banner title
-  title: yijibiaotiyanshi
+  title: What's Past Is Prologue. 
   # Home banner subtitle
   subtitle:
-    text: [erjibiaotiyanshi] # subtitle text, array
+    text: [“凡是过去，皆为序章。”] # subtitle text, array
     hitokoto:  # 一言配置
       enable: false # Whether to enable hitokoto
       api: https://v1.hitokoto.cn # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
@@ -141,14 +141,15 @@ home_banner:
   # Home banner social links
   social_links:
     # Whether to enable
-    enable: false
+    enable: true
     # Social links
     links:
-      github:  # your GitHub URL
-      instagram: # your Instagram URL
-      zhihu:  # your ZhiHu URL
-      twitter:  # your twitter URL
-      email:  # your email
+      github: https://github.com/  # your GitHub URL
+      instagram: https://www.instagram.com/  # your Instagram URL
+      zhihu: # https://www.zhihu.com/ # your ZhiHu URL
+      twitter: https://twitter.com/home/  # your twitter URL
+      email: https://mail.google.com/  # your email
+      bilibili: https://www.bilibili.com/ 
       # ...... # you can add more
 # HOME BANNER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
@@ -167,30 +168,44 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
-    # Archives: 
-    #   path: /archives 
-    #   icon: fa-regular fa-archive # can be empty
+    Archives: 
+      path: /archives 
+      icon: fa-regular fa-archive # can be empty
     # Status: 
-    #   path: https://status.evanluo.top/
-    #   icon: fa-regular fa-chart-bar
-    # About: 
-    #   icon: fa-regular fa-user
-    #   submenus:
-    #     Me: /about
-    #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
-    #     Blog: https://ohevan.com
-    #     Friends: /friends
+      # path: https://status.evanluo.top/
+      # icon: fa-regular fa-chart-bar
+    About: 
+      icon: fa-regular fa-user
+      submenus:
+        # Me: /about
+        Github: https://github.com/ # https://github.com/EvanNotFound/hexo-theme-redefine
+        Blog: https://zhw4616.github.io
+        Tags: /tags
+        Categories: /categories
+        # Friends: /friends
+    # tags: 此处tags是手动添加，源文件没有 
+    # Tags: 
+      # path: /tags
+      # icon: fa-regular fa-tags
+    # categories: 此处也是手动添加
+    # Categories: 
+      # path: /categories 
+      # icon: fa-regular fa-folder
     # Links: 
-    #   icon: fa-regular fa-link
-    #   submenus:
-    #     Link1: /link1
-    #     Link2: /link2
-    #     Link3: /link3
+      # icon: fa-regular fa-link
+      # submenus:
+        # Link1: /link1
+        # Link2: /link2
+        # Link3: /link3 
+    # 以下是瀑布流相册手动添加，代码格式参考以上模式
+    Gallery:
+      path: /masonry
+      icon: fa-solid fa-image 
     # ...... # you can add more
   # Navbar search (local search). Requires hexo-generator-searchdb (npm i hexo-generator-searchdb). See https://github.com/theme-next/hexo-generator-searchdb
   search:
     # Whether to enable
-    enable: false
+    enable: true
     # Preload search data when the page loads
     preload: true
 # NAVIGATION BAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -202,18 +217,18 @@ home:
   sidebar:
     enable: true # Whether to enable sidebar
     position: left # Sidebar position. left, right
-    first_item: menu # First item in sidebar. menu, info
-    announcement: # Announcement text
+    first_item: info # First item in sidebar. menu, info 信息栏在上还是菜单栏在上
+    announcement: What's Past Is Prologue # Announcement text 
     links:
-      # Archives: 
-      #   path: /archives 
-      #   icon: fa-regular fa-archive # can be empty
-      # Tags: 
-      #   path: /tags 
-      #   icon: fa-regular fa-tags # can be empty
-      # Categories: 
-      #   path: /categories 
-      #   icon: fa-regular fa-folder # can be empty
+      Archives: 
+        path: /archives 
+        icon: fa-regular fa-archive # can be empty
+      Tags: 
+        path: /tags 
+        icon: fa-regular fa-tags # can be empty
+      Categories: 
+        path: /categories 
+        icon: fa-regular fa-folder # can be empty
       # ...... # you can add more
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
@@ -247,7 +262,7 @@ articles:
   author_label: 
     enable: true # Whether to enable
     auto: false # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
-    list: [vvv]
+    list: [MVP++]
   # Code block settings
   code_block:
     copy: true # Whether to enable code block copy button
@@ -259,12 +274,12 @@ articles:
   # Table of contents settings
   toc:
     enable: true # Whether to enable TOC
-    max_depth: 3 # TOC depth
+    max_depth: 4 # TOC depth 边目录最小到四级目录，之前是三级。
     number: false # Whether to add number to TOC automatically
     expand: true # Whether to expand TOC
     init_open: true # Open toc by default
   # Whether to enable copyright notice
-  copyright: true
+  copyright: false
   # Whether to enable lazyload for images
   lazyload: true
   # Article recommendation. Requires nodejieba (npm install nodejieba). Transplanted from hexo-theme-volantis.
@@ -294,8 +309,8 @@ comment:
   config:
     # Waline comment system. See https://waline.js.org/
     waline:
-      serverUrl: https://example.example.com # Waline server URL. e.g. https://example.example.com
-      lang: zh-CN # Waline language. e.g. zh-CN, en-US. See https://waline.js.org/guide/client/i18n.html
+      serverUrl: https://workblog-comment-c5spx73q1-zhw4616.vercel.app/ # Waline server URL. e.g. https://example.example.com
+      lang: en-US # Waline language. e.g. zh-CN, en-US. See https://waline.js.org/guide/client/i18n.html
     # Gitalk comment system. See https://github.com/gitalk/gitalk
     gitalk:
       clientID: # GitHub Application Client ID
@@ -330,7 +345,7 @@ footer:
   # Icon in footer, write fontawesome icon code here
   icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
   # The start time of the website, format: YYYY/MM/DD HH:mm:ss
-  start: 2022/8/17 11:45:14
+  start: 2023/7/5 19:56:45
   # Footer message
   customize:
   # ICP record number. See https://beian.miit.gov.cn/

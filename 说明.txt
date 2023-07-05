@@ -1,0 +1,2 @@
+此文件为家里电脑blog文件夹，网页推送至GitHub-repo-bloghome
+本地文件备份至GitHub-repo-bloghomefile
