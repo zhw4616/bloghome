@@ -11,6 +11,21 @@ typora-root-url: .\..\
 
 #
 
+### 更改背景图片问题
+
+更改背景图片出现本地正常，推送网页无法更新，具体原因不明确，通过更改图片名称为简单小写英文后，clean之后hexo g-d即可正常。
+
+```
+ hexo d:
+   rename images/blogpicture/{Eclipse.jpg => darkeclipse.jpg} (100%) 
+   开始将Eclipse => eclipse网页并没有更新，没有识别大写改为小写，重新命名后才正常
+   rename images/blogpicture/{Fantasy Samurai.jpg => samurai.jpg} (100%)
+```
+
+redefine这个主题，如果图片名称复杂，名字中含有符号或大小写，会有影响。
+
+在typora中出现过图片名称复杂无法正确加载，昨天更改背景图片也是图片名称问题，甚至大小写都有影响，对本地部署没有问题，hexo d到GitHub上网页图片加载易出问题，所以图片名称尽量简单且为小写。
+
 ### 瀑布流相册图片地址
 
 ```

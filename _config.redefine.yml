@@ -102,8 +102,8 @@ home_banner:
   style: static # static or fixed
   # Home banner image
   image: 
-    light: ../images/wallhaven-wqery6-light.webp # light mode 本地部署无法加载背景图片，然后这里加上两个..就可以了。
-    dark: ../images/wallhaven-wqery6-dark.webp # dark mode 就是本地路径的问题，用相对路径就可以了。关于hostname就不纠结了。
+    light: ../images/blogpicture/samurai.jpg ## wallhaven-wqery6-light.webp # light mode 本地部署无法加载背景图片，然后这里加上两个..就可以了。
+    dark: ../images/blogpicture/darkeclipse.jpg ## wallhaven-wqery6-dark.webp # dark mode 就是本地路径的问题，用相对路径就可以了。关于hostname就不纠结了。
   # Home banner title
   title: What's Past Is Prologue. 
   # Home banner subtitle
