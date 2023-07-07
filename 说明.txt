@@ -1,2 +1,12 @@
 此文件为家里电脑blog文件夹，网页推送至GitHub-repo-bloghome
 本地文件备份至GitHub-repo-bloghomefile
+
+添加评论
+AppID
+5ctjmFii63sgF0C64o0it6sY-MdYXbMMI
+
+AppKey
+rOmthToFZGqtSwkQSfPyyZr9
+
+MasterKey
+QRsC6AmgUqvEVIRSF8KjWfkk

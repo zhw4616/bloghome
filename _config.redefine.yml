@@ -21,11 +21,11 @@ info:
 # IMAGE CONFIGURATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 defaults:
   # Favicon
-  favicon: /images/blogpicture/update.jpg
+  favicon: /images/blogpicture/wolf.jpg
   # Site logo
-  logo: /images/blogpicture/update.jpg
+  logo: /images/blogpicture/webwolf.png
   # Site avatar
-  avatar: /images/blogpicture/update.jpg
+  avatar: /images/blogpicture/hugo.jpg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -102,8 +102,8 @@ home_banner:
   style: static # static or fixed
   # Home banner image
   image: 
-    light: ../images/blogpicture/samurai.jpg ## wallhaven-wqery6-light.webp # light mode 本地部署无法加载背景图片，然后这里加上两个..就可以了。
-    dark: ../images/blogpicture/darkeclipse.jpg ## wallhaven-wqery6-dark.webp # dark mode 就是本地路径的问题，用相对路径就可以了。关于hostname就不纠结了。
+    light: ../images/blogpicture/light.jpg ## wallhaven-wqery6-light.webp # light mode 本地部署无法加载背景图片，然后这里加上两个..就可以了。
+    dark: ../images/blogpicture/dark.jpg ## wallhaven-wqery6-dark.webp # dark mode 就是本地路径的问题，用相对路径就可以了。关于hostname就不纠结了。
   # Home banner title
   title: What's Past Is Prologue. 
   # Home banner subtitle
@@ -120,7 +120,7 @@ home_banner:
     smart_backspace: true # Whether to smart backspace
   # Color of home banner text
   text_color: 
-    light: "#fff" # light mode
+    light: "#000000"     # "#fff" # light mode
     dark: "#d1d1b6" # dark mode
   # Specific style of the text
   text_style: 
@@ -179,7 +179,7 @@ navbar:
       submenus:
         # Me: /about
         Github: https://github.com/ # https://github.com/EvanNotFound/hexo-theme-redefine
-        Blog: https://zhw4616.github.io
+        WorkBlog: https://zhw4616.github.io
         Tags: /tags
         Categories: /categories
         # Friends: /friends
@@ -309,7 +309,7 @@ comment:
   config:
     # Waline comment system. See https://waline.js.org/
     waline:
-      serverUrl: https://workblog-comment-c5spx73q1-zhw4616.vercel.app/ # Waline server URL. e.g. https://example.example.com
+      serverUrl: https://bloghome-comment-btqdargq6-zhw4616.vercel.app # https://workblog-comment-c5spx73q1-zhw4616.vercel.app/ # Waline server URL. e.g. https://example.example.com
       lang: en-US # Waline language. e.g. zh-CN, en-US. See https://waline.js.org/guide/client/i18n.html
     # Gitalk comment system. See https://github.com/gitalk/gitalk
     gitalk:

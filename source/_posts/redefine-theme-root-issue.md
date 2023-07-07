@@ -26,6 +26,15 @@ redefine这个主题，如果图片名称复杂，名字中含有符号或大小
 
 在typora中出现过图片名称复杂无法正确加载，昨天更改背景图片也是图片名称问题，甚至大小写都有影响，对本地部署没有问题，hexo d到GitHub上网页图片加载易出问题，所以图片名称尽量简单且为小写。
 
+PS:又试了一下更改背景图片，此次直接将图片名称命名简单且小写，依然是本地正常网页无法更新，本地重新给背景图片改名，再次hexo cl=>hexo g=>hexo d出现以下提示后，网页背景图片更新。具体原因不详。
+
+```
+ rename images/blogpicture/{emma.jpg => dark.jpg} (100%)
+ rename images/blogpicture/{unsplash.jpg => light.jpg} (100%)
+```
+
+
+
 ### 瀑布流相册图片地址
 
 ```
